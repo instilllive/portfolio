@@ -1,36 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videography Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instill.Live | Videography</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #0f172a, #1e3a8a);
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    header {
+      padding: 60px 20px 40px;
+    }
+    h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      text-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+    }
+    .tagline {
+      font-size: 1.5rem;
+      margin: 10px 0 30px;
+      opacity: 0.9;
+    }
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      padding: 0 20px 60px;
+    }
+    .video-card {
+      background: rgba(30, 58, 138, 0.4);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+    .video-card:hover {
+      transform: scale(1.05);
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+    .bio {
+      max-width: 700px;
+      margin: 40px auto;
+      line-height: 1.6;
+    }
+    .links {
+      margin: 40px 0;
+    }
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2rem;
+    }
+    a:hover { color: #93c5fd; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Videography Portfolio</h1>
-    </header>
-    <main>
-        <section>
-            <h2>My Work</h2>
-            <p>This portfolio showcases my videography projects, demonstrating skills in storytelling, cinematography, and editing.</p>
-            <ul>
-                <li>
-                    <h3>Project Title 1</h3>
-                    <p>Description of project 1.</p>
-                </li>
-                <li>
-                    <h3>Project Title 2</h3>
-                    <p>Description of project 2.</p>
-                </li>
-                <li>
-                    <h3>Project Title 3</h3>
-                    <p>Description of project 3.</p>
-                </li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>Contact: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    </footer>
+  <header>
+    <h1>Instill.Live</h1>
+    <p class="tagline">Capturing moments that instill life</p>
+  </header>
+
+  <div class="bio">
+    <p>Aspiring videographer specializing in iphoneography. From festival lights to raw energy, I frame what moves you. Email for collabs or hires.</p>
+  </div>
+
+  <section class="videos">
+    <div class="video-card">
+      <iframe src="https://www.instagram.com/reel/EXAMPLE/embed" allowfullscreen></iframe>
+      <p>Festival Vibes - Flux Pavilion</p>
+    </div>
+    <div class="video-card">
+      <iframe src="https://www.tiktok.com/embed/v2/EXAMPLE" allowfullscreen></iframe>
+      <p>EDM Night Raw Cut</p>
+    </div>
+    <div class="video-card">
+      <iframe src="https://player.vimeo.com/video/YOURID?h=hash" allowfullscreen></iframe>
+      <p>Short Cinematic Edit</p>
+    </div>
+  </section>
+
+  <div class="links">
+    <a href="https://www.instagram.com/_thatonegentleman" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@instill_live" target="_blank">TikTok</a>
+    <a href="mailto:your@email.com">Email for Hire</a>
+  </div>
+
 </body>
 </html>
